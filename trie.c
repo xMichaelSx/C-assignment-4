@@ -23,12 +23,6 @@ int storeword(char *w, int arr_len, char *end){
         c = getchar();
     }
 
-    // for(int i = 0; i<word_len; i++){
-    //     printf("%c",w[i]);
-    // }
-    // printf(" %d\n",word_len);
-    // printf("\n");
-
     if (c == EOF) end[0] = -1; // to indicate EOF (to stop loop from continuing getting words)
     if (word_len == 0){
         return -3;
